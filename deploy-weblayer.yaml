@@ -4,10 +4,10 @@
   become: yes
 
   tasks:
-  - name: stop the apache
-    service:
+  - name: install apache
+    yum:
       name: httpd
-      state: stopped
+      state: present
   - name: install unzip 
     yum:
       name: unzip
