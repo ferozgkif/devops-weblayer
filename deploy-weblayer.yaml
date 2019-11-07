@@ -11,7 +11,7 @@
   - name: install unzip 
     yum:
       name: unzip
-      state: started
+      state: present
   - name: send the zip to remote server
     copy:
       src: weblayer-build.zip
