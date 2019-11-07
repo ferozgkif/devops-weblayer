@@ -9,7 +9,7 @@
       name: httpd
       state: stopped
   - name: install unzip 
-    service:
+    yum:
       name: unzip
       state: started
   - name: send the zip to remote server
